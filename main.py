@@ -12,6 +12,11 @@ def add_digit(digit):
 def make_digit_button(digit):
     return tk.Button(text=digit,bd=5, font="Arial 13", command=lambda:add_digit(digit) )
 
+def make_operation_digit_button(operation):
+    return tk.Button(text=operation, bd=5, font="Arial 13", fg="red" )
+
+
+make_operation_digit_button("+").grid(row=2, column=3, stick="wens", padx=5, pady=5)
 
 
 calc=tk.Entry(root, justify=tk.RIGHT, font="Arial 15", width=15)
